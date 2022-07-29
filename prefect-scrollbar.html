@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>perfect-scrollbar</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="prefect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <style>
+    #device_scroll {
+      float: left;
+      background-color: #0F152F;
+      width: 517px;
+      height: 521px;
+      color: white;
+      /*overflow: hidden;
+				position: relative;
+				是必须有的*/
+      overflow: hidden;
+      position: relative;
+      /* display: none; */
+    }
+
+    /*滚动条*/
+    /*y 是纵轴*/
+    /*scrollbar背景*/
+    .ps__rail-y {
+      background-color: red;
+    }
+
+    /*静置时的样式*/
+    .ps__thumb-y {
+      background-color: green !important;
+    }
+
+    /*动态样式*/
+    .ps .ps__rail-y:hover,
+    .ps .ps__rail-y:focus,
+    .ps .ps__rail-y.ps--clicking {
+      background-color: red;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="device_scroll">
+    <div class="">
+      dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />dddddddd
+      <hr />
+    </div>
+  </div>
+  <script src="prefect-scrollbar/perfect-scrollbar.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    // 我的评价是不如BetterScroll 2.0
+    //初始化滚动条scrollbar
+    const ps = new PerfectScrollbar('#device_scroll', {
+      //滚动速度，默认为1
+      wheelSpeed: 1,
+      //最小宽度 单位px
+      suppressScrollX: true,
+      //到达最低端时告知父元素
+      wheelPropagation: true,
+      //最小宽度
+      minScrollbarLength: 20
+    });
+
+  </script>
+</body>
+
+</html>

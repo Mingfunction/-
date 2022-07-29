@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style type="text/css">
+    .test {
+      width: 420px;
+      height: 420px;
+    }
+
+    .test::before {
+      content: "111111111111111";
+      position: absolute;
+      filter: blur(5px);
+      z-index: 1;
+      /* background: url('https://t9.baidu.com/it/u=3363865102,2385131356&fm=218&app=126&size=f242,150&n=0&f=PNG?s=318922F106A2DD5F1024376203004074&sec=1653066000&t=e3487b2c9412bd230b9478f15c071080') no-repeat; */
+      right: 0;
+      bottom: 0;
+      top: 0px;
+      left: 0px;
+      background-color: #fff;
+      opacity: 0.2;
+      background-size: cover;
+      overflow: hidden;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div style="width: 300px;height: 300px;position: relative;">
+    <div class="test">
+      111
+      <img
+        src="https://t9.baidu.com/it/u=3363865102,2385131356&fm=218&app=126&size=f242,150&n=0&f=PNG?s=318922F106A2DD5F1024376203004074&sec=1653066000&t=e3487b2c9412bd230b9478f15c071080">
+    </div>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="user.js"></script>
+
+</html>
