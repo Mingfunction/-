@@ -68,7 +68,7 @@ String 转 Int
   print(b);
 ```
 
-字符串
+字符串 操作符
 ```dart
 void main(List<String> args) {
   String a = "12121";
@@ -164,6 +164,7 @@ test4() {
 
 
 ```
+函数
 ```dart
 // 函数
 
@@ -312,3 +313,46 @@ class Logger {
 }
 
 ```
+
+flutter
+```dart
+
+import 'package:flutter/material.dart';
+// 导入materialUI控件
+// google官方的控件
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    // material这个框架 调用 MaterialApp 创建一个material风格的ui
+    // 可以定义标题 主题等等
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      // 首页
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+```
+
+material 组件 andriod 
+cupertino 组件 ios
+
+Text 文本
+Image 图片
+Icon 图标
+Container 类似div 方便添加边角 内外边距 对齐背景
+
+Row Column Flex flex布局的组件
+
+Stack z轴的组件
+
+scaffold 页面骨架 实现了 上下导航 抽屉等
